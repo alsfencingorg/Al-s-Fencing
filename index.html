@@ -1,45 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al's Fencing</title>
+
   <style>
     body {
-      font-family: Arial;
-      background: #111;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
       color: white;
       text-align: center;
-      margin: 0;
     }
+
+    .container {
+      width: 85%;
+      max-width: 600px;
+      margin: auto;
+      padding: 60px 0;
+    }
+
     h1 {
-      padding: 20px;
+      font-size: 2.7rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
+
+    .desc {
+      color: #aaa;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 50px;
     }
-    .item {
-      background: #1c1c1c;
-      padding: 10px;
-      border-radius: 10px;
+
+    .section {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 25px 0;
+  border-top: 1px solid #222;
+}
+
+.section:last-of-type {
+  border-bottom: 1px solid #222;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.section-sub {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.section:hover {
+  background: #1a1a1a;
     }
-    img {
-      width: 100%;
-      border-radius: 10px;
+
+    .contact {
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #222;
+    }
+
+    .contact p {
+      margin: 8px 0;
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    .label {
+      color: #888;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
     }
   </style>
 </head>
 
 <body>
-<h1>My Work</h1>
+  <div class="container">
+    <h1>Al's Fencing</h1>
+    <p class="desc">
+      Custom fences and metalwork built with precision, durability, and clean design.
+    </p>
 
-<div class="gallery">
-  <div class="item">
-    <img src="image1.jpg">
-    <p>Caption here</p>
+    <!-- Vertical Sections -->
+    <a href="gates.html" class="section">
+      <div class="section-title">Gates</div>
+      <div class="section-sub">Custom iron, driveway, and sliding gates</div>
+    </a>
+
+    <a href="fences.html" class="section">
+      <div class="section-title">Fences</div>
+      <div class="section-sub">Privacy, security, and decorative fencing</div>
+    </a>
+
+    <a href="misc.html" class="section">
+      <div class="section-title">Miscellaneous</div>
+      <div class="section-sub">Railings, metalwork, and custom projects</div>
+    </a>
+
+    <!-- Contact (unchanged functionality) -->
+    <div class="contact">
+      <p class="label">CONTACT</p>
+
+      <p>
+        <a href="mailto:alsfencing@email.com" style="color:#ddd; text-decoration:none;">
+          alsfencing@email.com
+        </a>
+      </p>
+
+      <p>
+        <a href="tel:1234567890" style="color:#ddd; text-decoration:none;">
+          (123) 456-7890
+        </a>
+      </p>
+
+      <p style="margin-top: 15px;">
+        <a href="mailto:alsfencing@email.com?subject=Free Quote Request" 
+           style="display:inline-block; padding:10px 18px; border:1px solid #333; border-radius:8px; text-decoration:none; color:white;">
+           Request Free Quote
+        </a>
+      </p>
+
+      <p style="color:#888;">Serving Los Angeles & surrounding areas</p>
+    </div>
   </div>
-</div>
-
 </body>
 </html>
